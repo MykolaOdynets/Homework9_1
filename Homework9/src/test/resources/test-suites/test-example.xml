@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test Example suite" configfailurepolicy="continue">
+	<test name="Test Example">
+	    <parameter name="browserName" value="chrome" />
+		<classes>
+			<class name="Lits.Homework9" />
+
+		</classes>
+	</test>
+</suite>
