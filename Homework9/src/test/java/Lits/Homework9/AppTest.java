@@ -76,16 +76,17 @@ public class AppTest {
 	}
 
 	@Test
-	public void TestFoundText111() throws InterruptedException {
-		webDriver.findElement(By.xpath("//INPUT[@class='gb_yf']")).sendKeys("Hello User", Keys.ENTER);
+	public void TestFoundText() throws InterruptedException {
+		webDriver.findElement(By.xpath("//INPUT[@class='gb_Ef']")).sendKeys("Hello User", Keys.ENTER);
 		Thread.sleep(2000);
 		Assert.assertTrue(true);
-		webDriver.findElement(By.xpath("//INPUT[@class='gb_yf']")).clear();
+		webDriver.findElement(By.xpath("//INPUT[@class='gb_Ef']")).clear();
 	}
 
 	@Test
 	public void TestNoFoundText() throws InterruptedException {
-		webDriver.findElement(By.xpath("//INPUT[@class='gb_yf']")).sendKeys("donotfoundme");
+		webDriver.findElement(By.xpath("//INPUT[@class='gb_Ef']")).sendKeys("donotfoundme", Keys.ENTER);
+		Thread.sleep(2000);
 		Assert.assertFalse(false);
 		webDriver.quit();
 
